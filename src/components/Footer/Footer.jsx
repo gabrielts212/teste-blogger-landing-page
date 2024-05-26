@@ -3,21 +3,16 @@ import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../../assets/logo.png";
 import Logo2 from "../../assets/logo2.png";
-// import Logo3 from "../../assets/logo3.png";
 
 const Footer = () => {
   return (
     <Box bg="gray.100" color="gray.700" py={10}>
-      <Container maxW="6xl" >
+      <Container maxW="6xl">
         <SimpleGrid columns={{ base: 1, md: 5 }} spacing={4}>
-           {/* <Box mb={4}>
-              <Image src={Logo3} alt="Logo" width={80} height={80} />
-            </Box> */}
           <Stack align="center" spacing={4}>
             <Box mb={4}>
               <Image src={Logo} alt="Logo" width={80} height={80} />
             </Box>
-
             <Flex justifyContent="center">
               <Box mx={1}>
                 <FaFacebook size={24} />
@@ -32,10 +27,10 @@ const Footer = () => {
           </Stack>
 
           <Accordion allowToggle display={{ base: "block", md: "none" }}>
-            <AccordionItem >
+            <AccordionItem>
               <h2>
-                <Flex justifyContent="center"> 
-                  <AccordionButton width="70%"> 
+                <Flex justifyContent="center">
+                  <AccordionButton width="70%">
                     <Box
                       flex="1"
                       display="flex"
@@ -55,41 +50,38 @@ const Footer = () => {
               </h2>
               <AccordionPanel pb={4} textAlign="center" alignItems="center" justifyContent="center">
                 <Flex mb={4} alignItems="center" justifyContent="center">
-                  <Box mr={4} mb="4" >
-                    <Image src={Logo2} alt="Logo" width={7} height={7}/>
+                  <Box mr={4} mb="4">
+                    <Image src={Logo2} alt="Logo" width={7} height={7} />
                   </Box>
                   <Stack spacing={0}>
                     <Text>Content</Text>
                     <Text>About Influencers</Text>
-                <Text>Performance</Text>
-                <Text>Work</Text>
+                    <Text>Performance</Text>
+                    <Text>Work</Text>
                   </Stack>
                 </Flex>
               </AccordionPanel>
             </AccordionItem>
 
-
-            <AccordionItem >
+            <AccordionItem>
               <h2>
                 <Flex justifyContent="center">
-
-
-                <AccordionButton width="70%">
-                  <Box
-                    flex="1"
-                    textAlign="center"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    bg="#66B2C2"
-                    borderRadius="full"
-                    px={2}
-                    py={1}
-                  >
-                    <Text color="white" mr={2}>Service</Text>
-                    <AccordionIcon color="white" />
-                  </Box>
-                </AccordionButton>
+                  <AccordionButton width="70%">
+                    <Box
+                      flex="1"
+                      textAlign="center"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      bg="#66B2C2"
+                      borderRadius="full"
+                      px={2}
+                      py={1}
+                    >
+                      <Text color="white" mr={2}>Service</Text>
+                      <AccordionIcon color="white" />
+                    </Box>
+                  </AccordionButton>
                 </Flex>
               </h2>
               <AccordionPanel pb={4} textAlign="center" alignItems="center" justifyContent="center">
@@ -98,51 +90,10 @@ const Footer = () => {
                     <Image src={Logo2} alt="Logo" width={12} height={12} />
                   </Box>
                   <Stack spacing={0}>
-                    <Text>Content</Text>
-                    <Text>About Influencers</Text>
-                <Text>Performance</Text>
-                <Text>Work</Text>
-                  </Stack>
-                </Flex>
-              </AccordionPanel>
-            </AccordionItem>
-
-
-
-
-            <AccordionItem>
-              <h2>
-              <Flex justifyContent="center">
-
-
-                <AccordionButton width="70%">
-                  <Box
-                    flex="1"
-                    textAlign="center"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    bg="#66B2C2"
-                    borderRadius="full"
-                    px={2}
-                    py={1}
-                  >
-                    <Text color="white" mr={2}>Community</Text>
-                    <AccordionIcon color="white" />
-                  </Box>
-                </AccordionButton>
-</Flex>
-              </h2>
-              <AccordionPanel pb={4} textAlign="center" alignItems="center" justifyContent="center">
-                <Flex mb={4} alignItems="center" justifyContent="center">
-                  <Box mr={4}>
-                    <Image src={Logo2} alt="Logo" width={12} height={12} />
-                  </Box>
-                  <Stack spacing={0}>
-                    <Text>Content</Text>
-                    <Text>About Influencers</Text>
-                <Text>Performance</Text>
-                <Text>Work</Text>
+                    <Text>Upgrade Rate</Text>
+                    <Text>Copy Writing</Text>
+                    <Text>Vlogging</Text>
+                    <Text>Publishing</Text>
                   </Stack>
                 </Flex>
               </AccordionPanel>
@@ -150,27 +101,24 @@ const Footer = () => {
 
             <AccordionItem>
               <h2>
-
-              <Flex justifyContent="center"> 
-              
-              
-                <AccordionButton width="70%">
-                  <Box
-                    flex="1"
-                    textAlign="center"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    bg="#66B2C2"
-                    borderRadius="full"
-                    px={2}
-                    py={1}
-                  >
-                    <Text color="white" mr={2}>About</Text>
-                    <AccordionIcon color="white" />
-                  </Box>
-                </AccordionButton>
-              </Flex>
+                <Flex justifyContent="center">
+                  <AccordionButton width="70%">
+                    <Box
+                      flex="1"
+                      textAlign="center"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      bg="#66B2C2"
+                      borderRadius="full"
+                      px={2}
+                      py={1}
+                    >
+                      <Text color="white" mr={2}>Community</Text>
+                      <AccordionIcon color="white" />
+                    </Box>
+                  </AccordionButton>
+                </Flex>
               </h2>
               <AccordionPanel pb={4} textAlign="center" alignItems="center" justifyContent="center">
                 <Flex mb={4} alignItems="center" justifyContent="center">
@@ -178,18 +126,60 @@ const Footer = () => {
                     <Image src={Logo2} alt="Logo" width={12} height={12} />
                   </Box>
                   <Stack spacing={0}>
-                    <Text>Content</Text>
-                    <Text>About Influencers</Text>
-                <Text>Performance</Text>
-                <Text>Work</Text>
+                    <Text>Influencers Form</Text>
+                    <Text>Sharing Session</Text>
+                    <Text>Meet & Greet</Text>
+                  </Stack>
+                </Flex>
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+              <h2>
+                <Flex justifyContent="center">
+                  <AccordionButton width="70%">
+                    <Box
+                      flex="1"
+                      textAlign="center"
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      bg="#66B2C2"
+                      borderRadius="full"
+                      px={2}
+                      py={1}
+                    >
+                      <Text color="white" mr={2}>About</Text>
+                      <AccordionIcon color="white" />
+                    </Box>
+                  </AccordionButton>
+                </Flex>
+              </h2>
+              <AccordionPanel pb={4} textAlign="center" alignItems="center" justifyContent="center">
+                <Flex mb={4} alignItems="center" justifyContent="center">
+                  <Box mr={4}>
+                    <Image src={Logo2} alt="Logo" width={12} height={12} />
+                  </Box>
+                  <Stack spacing={0}>
+                    <Text>Work On</Text>
+                    <Text>Profile</Text>
+                    <Text>Privacy</Text>
                   </Stack>
                 </Flex>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
-  
+
           <Stack align="flex-start" spacing={2} display={{ base: "none", md: "block" }}>
-            <Text className="title-background" fontWeight="500" fontSize="lg" mb={2}>Influencers</Text>
+            <Box
+              bg="#66B2C2"
+              borderRadius="full"
+              px={3}
+              py={1}
+              mb={2}
+            >
+              <Text color="white" fontWeight="500" fontSize="lg">Influencers</Text>
+            </Box>
             <Text>Content</Text>
             <Text>About Influencers</Text>
             <Text>Performance</Text>
@@ -197,7 +187,15 @@ const Footer = () => {
           </Stack>
 
           <Stack align="flex-start" spacing={2} display={{ base: "none", md: "block" }}>
-            <Text className="title-background" fontWeight="500" fontSize="lg" mb={2}>Service</Text>
+            <Box
+              bg="#66B2C2"
+              borderRadius="full"
+              px={3}
+              py={1}
+              mb={2}
+            >
+              <Text color="white" fontWeight="500" fontSize="lg">Service</Text>
+            </Box>
             <Text>Upgrade Rate</Text>
             <Text>Copy Writing</Text>
             <Text>Vlogging</Text>
@@ -205,23 +203,42 @@ const Footer = () => {
           </Stack>
 
           <Stack align="flex-start" spacing={2} display={{ base: "none", md: "block" }}>
-            <Text className="title-background" fontWeight="500" fontSize="lg" mb={2}>Community</Text>
+            <Box
+              bg="#66B2C2"
+              borderRadius="full"
+              px={3}
+              py={1}
+              mb={2}
+             
+            >
+              <Text color="white" fontWeight="500" fontSize="lg">Community</Text>
+            </Box>
             <Text>Influencers Form</Text>
             <Text>Sharing Session</Text>
             <Text>Meet & Greet</Text>
           </Stack>
 
           <Stack align="flex-start" spacing={2} display={{ base: "none", md: "block" }}>
-            <Text className="title-background" fontWeight="500" fontSize="lg" mb={2}>About</Text>
+            <Box
+              bg="#66B2C2"
+              borderRadius="full"
+              px={3}
+              py={1}
+              mb={2}
+              
+            >
+              <Text color="white" fontWeight="500" fontSize="lg">About</Text>
+            </Box>
             <Text>Work On</Text>
             <Text>Profile</Text>
             <Text>Privacy</Text>
           </Stack>
         </SimpleGrid>
       </Container>
-      <Box textAlign="center" mt={10}>
+      <Box textAlign="center" mt={10} >
         <Divider w="90%" borderWidth={2} borderColor="gray" mb={5} mx="auto" />
         <Text>Resource by Blogger LandingPage - ©2023</Text>
+         
       </Box>
     </Box>
   );
