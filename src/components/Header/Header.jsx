@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <ChakraProvider>
-      <Box bg="gray.100" px={4} py={2}>
+      <Box bg="white" px={4} py={2}>
         <Flex align="center">
           <CustomLink to="/">
             <Box pl={8}>
@@ -36,66 +36,69 @@ function Header() {
               display="flex"
               alignItems="center"
               justifyContent="center"
-              borderRadius="full"
-              colorScheme="customTeal"
-              //   bg="#344455"
-              //   _hover={{ bg: "#66B2C2" }}
-              w={20}
+              // borderRadius="full"
+              // bg="white"
+              bgColor="white"
+              bg="white"
+              w={120}
               h={10}
+              // boxShadow="md"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="white"
+                fill="none"
                 viewBox="0 0 24 24"
+                stroke="currentColor"
                 width="24px"
                 height="24px"
               >
                 {showMenu ? (
-                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
                 )}
-                <path
-                  fill="black"
-                  d={
-                    showMenu
-                      ? "M20 12H4v-2h16v2zm0 5H4v-2h16v2zm0-10H4V5h16v2z"
-                      : "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                  }
-                />
               </svg>
             </Button>
           ) : (
             <Flex align="center">
               <CustomLink to="/">
                 <Text
-                  as="text"
+                  as="span"
                   mx={4}
                   fontWeight="bold"
                   _hover={{ textDecoration: "none", color: "gray.600" }}
                 >
-                  Home
+                  HOME
                 </Text>
               </CustomLink>
 
               <CustomLink to="/">
                 <Link
-                  as="text"
+                  as="span"
                   mx={4}
                   _hover={{ textDecoration: "none", color: "gray.600" }}
                 >
-                  Service
+                  SERVICE
                 </Link>
               </CustomLink>
 
               <CustomLink to="/">
                 <Link
-                  as="text"
+                  as="span"
                   mx={4}
-                  pr={20}
                   _hover={{ textDecoration: "none", color: "gray.600" }}
                 >
-                  Partner
+                  PARTNER
                 </Link>
               </CustomLink>
 
@@ -105,7 +108,7 @@ function Header() {
                   colorScheme="customTeal"
                   borderRadius="full"
                   bg="#344455"
-                  _hover={{ bg: "#66B2C2" }}
+                  _hover={{ bgGradient: "linear(to-r, teal.400, green.400)" }}
                   w={24}
                   h={8}
                   fontWeight="normal"
@@ -120,39 +123,38 @@ function Header() {
         {isMobile && showMenu && (
           <Flex
             direction="column"
-            // bg="gray.200"
             mt={2}
             p={2}
             borderRadius="md"
           >
             <CustomLink to="/">
               <Text
-                as="text"
+                as="span"
                 my={2}
                 fontWeight="bold"
                 _hover={{ textDecoration: "none", color: "gray.600" }}
               >
-                Home
+                HOME
               </Text>
             </CustomLink>
 
             <CustomLink to="/">
               <Link
-                as="text"
+                as="span"
                 my={2}
                 _hover={{ textDecoration: "none", color: "gray.600" }}
               >
-                Service
+                SERVICE
               </Link>
             </CustomLink>
 
             <CustomLink to="/">
               <Link
-                as="text"
+                as="span"
                 my={2}
                 _hover={{ textDecoration: "none", color: "gray.600" }}
               >
-                Partner
+                PARTNER
               </Link>
             </CustomLink>
 
