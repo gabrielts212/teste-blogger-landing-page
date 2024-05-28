@@ -17,7 +17,7 @@ import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../../assets/logo.png";
 import Logo2 from "../../assets/logo2.png";
-import Logo3 from "../../assets/setafooter.png";
+
 
 const Footer = () => {
   return (
