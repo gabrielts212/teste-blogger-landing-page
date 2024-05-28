@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div>
       <Header />
-      {/* <Principalpage />
-      <GreatWork/> */}
+      {/* <Principalpage /> */}
+      <GreatWork/>
       <Business />
       <Form />
       <Plans />

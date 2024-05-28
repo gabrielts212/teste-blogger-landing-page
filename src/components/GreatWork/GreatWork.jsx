@@ -9,7 +9,6 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import React from "react";
-import Image from "next/image";
 
 const GreatWork = () => {
   return (
@@ -69,6 +68,7 @@ const GreatWork = () => {
             Publishing Business
           </Button>
         </HStack>
+
         <SimpleGrid
           columns={{ base: 1, md: 2 }}
           spacing={10}
@@ -81,13 +81,13 @@ const GreatWork = () => {
           boxShadow="lg"
           mb={40}
         >
-          <Box>
+          <Box display="flex" alignItems="center">
             <Text fontSize={{ base: "md", md: "lg" }} mb={4}>
               <strong>Our experienced team</strong> will be present to ensure
               every aspect of the event runs smoothly from welcoming guests.
             </Text>
           </Box>
-          <Box>
+          <Box display="flex" alignItems="center">
             <Text fontSize={{ base: "md", md: "lg" }} mb={4}>
               <strong>Every precious moment</strong> will be captured by our
               professional photographers and videographers.
