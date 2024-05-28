@@ -7,31 +7,57 @@ import Logo2 from "../../assets/logo2.png";
 
 const Contact = () => {
   return (
-    <Flex position="relative" flexDirection="column" alignItems="center" p={{ base: 4, md: 10 }}>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing="40px" alignItems="center" w="full" maxW="80%">
+    <Flex
+      position="relative"
+      flexDirection="column"
+      alignItems="center"
+      p={{ base: 4, md: 20 }}
+    >
+      <SimpleGrid
+        columns={{ base: 1, md: 3 }}
+        spacing="40px"
+        alignItems="center"
+        w="full"
+        maxW="65%"
+      >
         <Flex direction="column" width="100%" p={5} alignItems="flex-start">
-          <Heading fontFamily="Montserrat" fontSize={{ base: "2xl", md: "4xl" }}>
+          <Heading
+            fontFamily="Montserrat"
+            fontSize={{ base: "2xl", md: "4xl" }}
+            as="h2"
+            size="xl"
+            mb={10}
+            textAlign="center"
+            zIndex={2}
+            maxW="320px"
+          >
             We are Prioritizes Mutual Development
           </Heading>
-          <Flex mt={4} alignItems="center" justifyContent="flex-start" textAlign="left" maxW="70%">
-            <Text fontSize={{ base: "sm", md: "md" }}>
+          <Flex
+            mt={4}
+            alignItems="center"
+            justifyContent="flex-start"
+            textAlign="left"
+            maxW="80%"
+          >
+            <Text fontSize={{ base: "md", md: "lg" }} textAlign="center" ml={2}>
               Let's build and succeed together with the services we provide
             </Text>
-            <Box ml={4} maxW="100%">
+            <Box ml={4}>
               <Image src={Logo2} alt="Logo" width={18} height={18} />
             </Box>
           </Flex>
         </Flex>
 
-        <Flex justify="center" align="center" position="relative" mt={{ base: 8, md: 0 }} p={5}>
+        <Flex justify="center" align="center" position="relative">
           <Button
-          mt="20"
+            mt="20"
             colorScheme="teal"
             borderRadius="full"
             bg="#66B2C2"
             _hover={{ bgGradient: "linear(to-r, teal.400, green.400)" }}
-            w="auto"
-            h="auto"
+            width="150px"
+            height="50px"
             px={6}
             py={2}
             fontWeight="normal"
@@ -42,10 +68,13 @@ const Contact = () => {
         </Flex>
 
         <Flex justify="center" align="center" p={5}>
-          <Box boxSize={{ base: "150px", md: "200px", lg: "300px" }} maxW="100%">
-            <Image 
-              src={Logocontact3} 
-              alt="Contact Logo" 
+          <Box
+            boxSize={{ base: "150px", md: "200px", lg: "300px" }}
+            maxW="100%"
+          >
+            <Image
+              src={Logocontact3}
+              alt="Contact Logo"
               width={300}
               height={300}
             />

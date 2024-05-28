@@ -1,7 +1,15 @@
-import { Box, Flex, SimpleGrid, Heading, Text, Button, Stack, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  SimpleGrid,
+  Heading,
+  Text,
+  Button,
+  Stack,
+  HStack,
+} from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
-
 
 const GreatWork = () => {
   return (
@@ -15,38 +23,74 @@ const GreatWork = () => {
         borderBottomRightRadius={{ base: "40px", md: "80px" }}
         zIndex={2}
       >
-        <Heading fontFamily="Montserrat" fontSize={{ base: "2xl", md: "48px" }} textAlign="center" mb={6} color="white">
+        <Heading
+          fontFamily="Montserrat"
+          fontSize={{ base: "2xl", md: "48px" }}
+          textAlign="center"
+          mb={6}
+          color="white"
+        >
           The Great Work
         </Heading>
         <Flex justifyContent="center" alignItems="center" mb={6}>
-          {/* <Image src={ArrowLogo} alt="Arrow Logo" width={50} height={50} /> */}
           <Text fontSize={{ base: "md", md: "lg" }} color="white" ml={2}>
-            Collaborating with our agency is an effective marketing strategy to achieve goals.
+            Collaborating with our agency is an effective marketing strategy to
+            achieve goals.
           </Text>
         </Flex>
         <HStack spacing={4} mb={6} wrap="wrap" justify="center">
-          <Button variant="outline" colorScheme="whiteAlpha" borderRadius="full">
+          <Button
+            variant="outline"
+            colorScheme="whiteAlpha"
+            borderRadius="full"
+          >
             Influence & Followers
           </Button>
-          <Button variant="solid" bg="white" color="#66B2C2" borderRadius="full">
+          <Button
+            variant="solid"
+            bg="white"
+            color="#66B2C2"
+            borderRadius="full"
+          >
             Wedding Party
           </Button>
-          <Button variant="outline" colorScheme="whiteAlpha" borderRadius="full">
+          <Button
+            variant="outline"
+            colorScheme="whiteAlpha"
+            borderRadius="full"
+          >
             Business Expansion
           </Button>
-          <Button variant="outline" colorScheme="whiteAlpha" borderRadius="full">
+          <Button
+            variant="outline"
+            colorScheme="whiteAlpha"
+            borderRadius="full"
+          >
             Publishing Business
           </Button>
         </HStack>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} alignItems="center" w="full" maxW="1200px" bg="white" p={6} borderRadius="xl" boxShadow="lg" mb={40}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2 }}
+          spacing={10}
+          alignItems="center"
+          w="full"
+          maxW="1200px"
+          bg="white"
+          p={6}
+          borderRadius="xl"
+          boxShadow="lg"
+          mb={40}
+        >
           <Box>
             <Text fontSize={{ base: "md", md: "lg" }} mb={4}>
-              <strong>Our experienced team</strong> will be present to ensure every aspect of the event runs smoothly from welcoming guests.
+              <strong>Our experienced team</strong> will be present to ensure
+              every aspect of the event runs smoothly from welcoming guests.
             </Text>
           </Box>
           <Box>
             <Text fontSize={{ base: "md", md: "lg" }} mb={4}>
-              <strong>Every precious moment</strong> will be captured by our professional photographers and videographers.
+              <strong>Every precious moment</strong> will be captured by our
+              professional photographers and videographers.
             </Text>
           </Box>
         </SimpleGrid>

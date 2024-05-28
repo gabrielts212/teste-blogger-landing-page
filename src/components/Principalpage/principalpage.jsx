@@ -1,21 +1,78 @@
-import { Flex, Box, Heading, Text, Button, SimpleGrid, VStack, HStack } from "@chakra-ui/react";
-import React from "react";
+import {
+  Box,
+  Heading,
+  Text,
+  Button,
+  SimpleGrid,
+  VStack,
+  HStack,
+  Divider,
+  Flex,
+} from "@chakra-ui/react";
+
 import Image from "next/image";
-import Circulocinza from "../../assets/circulocinza.png";
+
+import Logo2 from "../../assets/logoformtext.png";
+import Checked from "../../assets/checked.png";
 
 const Principalpage = () => {
   return (
-    <Box position="relative" p={{ base: 4, md: 10 }} bg="white" overflow="hidden" >
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} alignItems="center" maxW="1200px" mx="auto" mb={40}>
+    <Box
+      position="relative"
+      p={{ base: 4, md: 10 }}
+      bg="white"
+      overflow="hidden"
+    >
+      <SimpleGrid
+        columns={{ base: 1, md: 2 }}
+        spacing={10}
+        alignItems="center"
+        maxW="1200px"
+        mx="auto"
+        pb={40}
+      >
         <Box position="relative" width="100%">
-          <VStack align="flex-start" spacing={6} zIndex={1} position="relative" p={{ base: 4, md: 10 }} border="2px solid #CBD5E0" borderRadius="xl">
-            <Heading fontFamily="Montserrat" fontSize={{ base: "2xl", md: "48px" }} textAlign="left">
-              LET'S TURN YOUR VLOGGING PASSION
-            </Heading>
+          <VStack
+            align="flex-start"
+            spacing={6}
+            zIndex={1}
+            position="relative"
+            p={{ base: 4, md: 10 }}
+            border="2px solid #CBD5E0"
+            borderRadius="xl"
+          >
+            <Box position="relative" width="100%">
+              <Heading
+                fontFamily="Montserrat"
+                fontSize={{ base: "2xl", md: "48px" }}
+                textAlign="left"
+              >
+                LET'S TURN YOUR VLOGGING PASSION
+              </Heading>
+              <Box
+                position="absolute"
+                top="0"
+                right="-50px"
+                transform="rotate(15deg)"
+                zIndex={-1}
+              >
+                <Image src={Logo2} alt="Logo" width={50} height={50} />
+              </Box>
+            </Box>
             <Text fontSize={{ base: "md", md: "lg" }} lineHeight="1.5">
-              Join Us on Our Blog and Enjoy <Text as="span" color="teal.500">High-Quality Content</Text> that Inspires and Provides Solutions
+              Join Us on Our Blog and Enjoy{" "}
+              <Text as="span" color="teal.500">
+                High-Quality Content
+              </Text>{" "}
+              that Inspires and Provides Solutions
             </Text>
-            <Button colorScheme="teal" borderRadius="full" size="lg">
+            <Button
+              colorScheme="teal"
+              bg="#66B2C2"
+              borderRadius="full"
+              size="lg"
+              _hover={{ bgGradient: "linear(to-r, teal.400, green.400)" }}
+            >
               JOIN BE PARTNER
             </Button>
           </VStack>
@@ -38,24 +95,82 @@ const Principalpage = () => {
             </VStack>
           </HStack>
         </Box>
-        <Box position="relative" width="100%" height="100%" display="flex" justifyContent="center" alignItems="center">
+
+        <Box
+          position="relative"
+          width="100%"
+          height="100%"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          pr="32"
+          pb="20"
+        >
           <Box
-            bg="#66B2C2"
-            width={{ base: "200px", md: "300px" }}
-            height={{ base: "200px", md: "300px" }}
-            borderRadius="50%"
             display="flex"
             justifyContent="center"
             alignItems="center"
             position="relative"
+            zIndex={1}
           >
-            <Image src={Circulocinza} alt="Circle Logo" width={100} height={100} />
-            <VStack color="white" spacing={3} position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" textAlign="center">
-              <Text fontSize="md">TRUSTED</Text>
-              <Text fontSize="md">ACTUAL</Text>
-              <Text fontSize="md">PROFESSIONAL</Text>
-              <Text fontSize="md">ACTUAL</Text>
-            </VStack>
+            <Box
+              bg="gray.200"
+              width={{ base: "150px", md: "200px" }}
+              height={{ base: "200px", md: "300px" }}
+              borderRadius="50%"
+              border="2px solid black"
+              position="relative"
+              zIndex={2}
+            />
+
+            <Box
+              bg="#66B2C2"
+              width={{ base: "200px", md: "300px" }}
+              height={{ base: "150px", md: "200px" }}
+              borderRadius="20px"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              position="absolute"
+              left={{ base: "75px", md: "100px" }}
+              zIndex={1}
+              px={4}
+            >
+              <VStack color="white" spacing={3} textAlign="left" pl="10">
+                <Flex align="center" w="100%">
+                  <Box mr={2}>
+                    <Image src={Checked} alt="Checked" width={15} height={15} />
+                  </Box>
+                  <Text fontSize={{ base: "sm", md: "lg" }} flex="1">
+                    TRUSTED
+                  </Text>
+                </Flex>
+                <Flex align="center" w="100%">
+                  <Box mr={2}>
+                    <Image src={Checked} alt="Checked" width={15} height={15} />
+                  </Box>
+                  <Text fontSize={{ base: "sm", md: "lg" }} flex="1">
+                    ACTUAL
+                  </Text>
+                </Flex>
+                <Flex align="center" w="100%">
+                  <Box mr={2}>
+                    <Image src={Checked} alt="Checked" width={15} height={15} />
+                  </Box>
+                  <Text fontSize={{ base: "sm", md: "lg" }} flex="1">
+                    TRUSTED
+                  </Text>
+                </Flex>
+                <Flex align="center" w="100%">
+                  <Box mr={2}>
+                    <Image src={Checked} alt="Checked" width={15} height={15} />
+                  </Box>
+                  <Text fontSize={{ base: "sm", md: "lg" }} flex="1">
+                    ACTUAL
+                  </Text>
+                </Flex>
+              </VStack>
+            </Box>
           </Box>
         </Box>
       </SimpleGrid>
@@ -70,8 +185,6 @@ const Principalpage = () => {
         bg="#66B2C2"
         zIndex={1}
       />
-     
-     
     </Box>
   );
 };

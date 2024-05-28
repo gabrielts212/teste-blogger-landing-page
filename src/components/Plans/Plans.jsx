@@ -1,8 +1,25 @@
-import { Box, SimpleGrid, Heading, Text, Button, useColorModeValue, Divider } from "@chakra-ui/react";
+import {
+  Box,
+  SimpleGrid,
+  Heading,
+  Text,
+  Button,
+  useColorModeValue,
+  Divider,
+} from "@chakra-ui/react";
 import Image from "next/image";
-import CheckIcon from "../../assets/t.png"; 
+import CheckIcon from "../../assets/t.png";
 
-const PriceCard = ({ title, price, features, buttonText, buttonColor, bgColor, textColor, priceColor }) => {
+const PriceCard = ({
+  title,
+  price,
+  features,
+  buttonText,
+  buttonColor,
+  bgColor,
+  textColor,
+  priceColor,
+}) => {
   return (
     <Box
       p={8}
@@ -22,11 +39,19 @@ const PriceCard = ({ title, price, features, buttonText, buttonColor, bgColor, t
       zIndex={2}
       mb={{ base: 10, md: 0 }}
     >
-      <Heading as="h3" size="lg" mb={4}>{title}</Heading>
+      <Heading as="h3" size="lg" mb={4}>
+        {title}
+      </Heading>
       <Divider mb={4} borderBottom="2px" borderColor="#344455" w="100%" />
       <Box mb={4}>
         {features.map((feature, index) => (
-          <Box key={index} display="flex" alignItems="center" mb={2}>
+          <Box
+            key={index}
+            display="flex"
+            alignItems="center"
+            mb={2}
+            _hover={{ bgGradient: "linear(to-r, teal.400, green.400)" }}
+          >
             <Image src={CheckIcon} alt="check icon" width={40} height={40} />
             <Text ml={2}>{feature}</Text>
           </Box>
@@ -62,7 +87,9 @@ const PriceCard = ({ title, price, features, buttonText, buttonColor, bgColor, t
           height="10px"
         />
       </Box>
-      <Text fontWeight="bold" fontSize="4xl" mb={4} color={priceColor}>${price}</Text>
+      <Text fontWeight="bold" fontSize="4xl" mb={4} color={priceColor}>
+        ${price}
+      </Text>
       <Button
         variant="outline"
         position="absolute"
@@ -87,7 +114,11 @@ const Plans = () => {
     {
       title: "Basic",
       price: "56",
-      features: ["Single Post Package", "Story Package", "Collaboration Package"],
+      features: [
+        "Single Post Package",
+        "Story Package",
+        "Collaboration Package",
+      ],
       buttonText: "Get Now",
       buttonColor: "white",
       bgColor: "white",
@@ -97,7 +128,12 @@ const Plans = () => {
     {
       title: "Standard",
       price: "120",
-      features: ["6 Post Package", "Story Package", "Collaboration Package", "Free Second Week"],
+      features: [
+        "6 Post Package",
+        "Story Package",
+        "Collaboration Package",
+        "Free Second Week",
+      ],
       buttonText: "Get Now",
       buttonColor: "#4F6C8C",
       bgColor: "#4F6C8C",
@@ -107,13 +143,18 @@ const Plans = () => {
     {
       title: "Premium",
       price: "200",
-      features: ["12 Post Package", "24 Story Package", "Collaboration Package", "Free Second Week"],
+      features: [
+        "12 Post Package",
+        "24 Story Package",
+        "Collaboration Package",
+        "Free Second Week",
+      ],
       buttonText: "Get Now",
       buttonColor: "white",
       bgColor: "white",
       textColor: "black",
       priceColor: "black",
-    }
+    },
   ];
 
   return (
@@ -137,7 +178,14 @@ const Plans = () => {
         borderRadius="3xl"
         zIndex={1}
       />
-      <Heading as="h2" size="xl" mb={10} textAlign="center" zIndex={2} maxW="320px">
+      <Heading
+        as="h2"
+        size="xl"
+        mb={10}
+        textAlign="center"
+        zIndex={2}
+        maxW="320px"
+      >
         Choose a Package According to Your Needs
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} zIndex={2}>

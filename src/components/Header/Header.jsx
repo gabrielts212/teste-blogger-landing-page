@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <ChakraProvider>
-      <Box bg="white" px={4} py={2}>
+      <Box bg="white" px={4} py={2} pt="10">
         <Flex align="center">
           <CustomLink to="/">
             <Box pl={8}>
@@ -36,13 +36,10 @@ function Header() {
               display="flex"
               alignItems="center"
               justifyContent="center"
-              // borderRadius="full"
-              // bg="white"
               bgColor="white"
               bg="white"
               w={120}
               h={10}
-              // boxShadow="md"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,12 +118,7 @@ function Header() {
         </Flex>
 
         {isMobile && showMenu && (
-          <Flex
-            direction="column"
-            mt={2}
-            p={2}
-            borderRadius="md"
-          >
+          <Flex direction="column" mt={2} p={2} borderRadius="md">
             <CustomLink to="/">
               <Text
                 as="span"

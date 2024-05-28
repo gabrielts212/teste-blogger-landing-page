@@ -12,9 +12,9 @@ export default function Home() {
     <div>
       <Header />
       {/* <Principalpage />
-      <GreatWork/> */}
-      {/* <Business />
-      <Form /> */}
+      <GreatWork/>
+      <Business /> */}
+      <Form />
       <Plans />
       <Contact />
       <Footer />
