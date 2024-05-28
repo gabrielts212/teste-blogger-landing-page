@@ -15,36 +15,35 @@ const Contact = () => {
     >
       <SimpleGrid
         columns={{ base: 1, md: 3 }}
-        spacing="40px"
+        spacing="50px"
         alignItems="center"
         w="full"
-        maxW="65%"
+        maxW="70%"
       >
         <Flex direction="column" width="100%" p={5} alignItems="flex-start">
           <Heading
-            fontFamily="Montserrat"
-            fontSize={{ base: "2xl", md: "4xl" }}
             as="h2"
             size="xl"
             mb={10}
             textAlign="center"
             zIndex={2}
-            maxW="320px"
+            width={{ base: "100%", md: "70%" }}
           >
-            We are Prioritizes Mutual Development
+            We Prioritize Mutual Development
           </Heading>
           <Flex
             mt={4}
             alignItems="center"
             justifyContent="flex-start"
             textAlign="left"
-            maxW="80%"
+            maxW="70%"
+            pl="10"
           >
             <Text fontSize={{ base: "md", md: "lg" }} textAlign="center" ml={2}>
               Let's build and succeed together with the services we provide
             </Text>
-            <Box ml={4}>
-              <Image src={Logo2} alt="Logo" width={18} height={18} />
+            <Box ml={2}>
+              <Image src={Logo2} alt="Logo" width={24} height={24} />
             </Box>
           </Flex>
         </Flex>

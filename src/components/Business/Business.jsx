@@ -8,7 +8,7 @@ import {
   Stack,
   Divider,
 } from "@chakra-ui/react";
-import React from "react";
+
 import Image from "next/image";
 import BusinessImg from "../../assets/logobusiness.png";
 import ArrowLogo from "../../assets/setabusiness.png";
@@ -21,16 +21,21 @@ const Business = () => {
       bg="white"
     >
       <Heading
-        fontFamily="Montserrat"
-        fontSize={{ base: "2xl", md: "48px" }}
+        as="h2"
+        size="xl"
+        pl={{ base: "0", md: "20" }}
+        mb={{ base: 4, md: 0 }}
         textAlign="center"
-        mb={2}
+        zIndex={2}
+        width={{ base: "100%", md: "60%" }}
+        maxW="800px"
       >
-        Improve Your Business
+        Improve your Business
       </Heading>
-      <Flex alignItems="center" justifyContent="center" mb={6}>
+
+      <Flex alignItems="center" justifyContent="center" mb={10}>
         <Image src={ArrowLogo} alt="Arrow Logo" width={50} height={50} />
-        <Text fontSize={{ base: "md", md: "lg" }} textAlign="center" ml={2}>
+        <Text fontSize={{ base: "md", md: "lg" }} textAlign="center">
           Improve the Quality of your Business and Feel the Benefits with Us
         </Text>
       </Flex>
@@ -40,7 +45,7 @@ const Business = () => {
         alignItems="center"
         maxW="1400px"
       >
-        <Flex justify="center" align="center" zIndex={1}>
+        <Flex justify="center" align="center" zIndex={1} mb="10">
           <Image
             src={BusinessImg}
             alt="Improve Business"
@@ -58,12 +63,12 @@ const Business = () => {
               alignItems="center"
               textAlign="center"
               border="1px solid"
-              borderColor="gray.200"
+              borderColor="#9EB5CF"
             >
               <Heading size="md" mb={2}>
                 Achieve Goals
               </Heading>
-              <Divider mb={4} borderBottom="2px" borderColor="gray.200" />
+              <Divider mb={4} borderBottom="2px" borderColor="#9EB5CF" />
               <Text>
                 Setting goals is like creating a roadmap to our dreams. They
                 give us direction and purpose.
@@ -77,13 +82,13 @@ const Business = () => {
               alignItems="center"
               textAlign="center"
               border="1px solid"
-              borderColor="gray.200"
+              borderColor="#9EB5CF"
               color="white"
             >
               <Heading size="md" mb={2}>
                 Campaign Manage
               </Heading>
-              <Divider mb={4} borderBottom="2px" borderColor="gray.200" />
+              <Divider mb={4} borderBottom="2px" borderColor="#9EB5CF" />
               <Text>
                 Set clear and measurable objectives for your campaigns. Know
                 what you want to achieve.
@@ -97,12 +102,12 @@ const Business = () => {
               alignItems="center"
               textAlign="center"
               border="1px solid"
-              borderColor="gray.200"
+              borderColor="#9EB5CF"
             >
               <Heading size="md" mb={2}>
                 Brand Development
               </Heading>
-              <Divider mb={4} borderBottom="2px" borderColor="gray.200" />
+              <Divider mb={4} borderBottom="2px" borderColor="#9EB5CF" />
               <Text>
                 We build a strong personal brand identity with consistent
                 verbiage style, visual appearance, and values.

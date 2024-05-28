@@ -184,7 +184,8 @@ const Plans = () => {
         mb={10}
         textAlign="center"
         zIndex={2}
-        maxW="320px"
+        width={{ base: "100%", md: "60%" }}
+        maxW="600px"
       >
         Choose a Package According to Your Needs
       </Heading>
