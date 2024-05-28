@@ -1,11 +1,11 @@
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/footer/Footer";
 import Header from "../components/header/Header";
-import Contact from "../components/Contact/Contact";
-import Plans from "../components/Plans/Plans";
-import Form from "../components/Form/Form";
-import Business from "../components/Business/Business";
-import GreatWork from "../components/GreatWork/GreatWork";
-import Principalpage from "../components/Principalpage/principalpage";
+import Contact from "../components/contact/Contact";
+import Plans from "../components/plans/Plans";
+import Form from "../components/form/Form";
+import Business from "../components/business/Business";
+import GreatWork from "../components/greatwork/GreatWork";
+import Principalpage from "../components/principalpage/Principalpage";
 
 export default function Home() {
   return (
