@@ -8,7 +8,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import CheckIcon from "../../assets/t.png";
+import CheckIcon from "../../assets/checkIcon.png";
 
 const PriceCard = ({
   title,
@@ -184,8 +184,7 @@ const Plans = () => {
         mb={10}
         textAlign="center"
         zIndex={2}
-        width={{ base: "100%", md: "60%" }}
-        maxW="600px"
+        maxW="320px"
       >
         Choose a Package According to Your Needs
       </Heading>

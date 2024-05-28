@@ -12,7 +12,7 @@ import {
 
 import Image from "next/image";
 
-import Logo2 from "../../assets/logoformtext.png";
+import Logoformtext from "../../assets/logoformtext.png";
 import Checked from "../../assets/checked.png";
 
 const Principalpage = () => {
@@ -56,7 +56,7 @@ const Principalpage = () => {
                 transform="rotate(15deg)"
                 zIndex={-1}
               >
-                <Image src={Logo2} alt="Logo" width={50} height={50} />
+                <Image src={Logoformtext} alt="Logo" width={50} height={50} />
               </Box>
             </Box>
             <Text fontSize={{ base: "md", md: "lg" }} lineHeight="1.5">
