@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Logo from "../../assets/logo.png";
-import CustomLink from "../link/Link";
+import CustomLink from "../link/link";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
