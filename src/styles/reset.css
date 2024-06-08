@@ -1,3 +1,4 @@
+/* styles/global.css */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 *,
@@ -71,7 +72,6 @@ h1,
 h2,
 h3,
 h4,
-heading,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
@@ -88,7 +88,7 @@ p {
   position: relative;
   display: inline-block;
   padding: 5px 20px;
-  background-color: #66B2C2;
+  background-color: #66b2c2;
   color: white;
   border-radius: 15px;
 }

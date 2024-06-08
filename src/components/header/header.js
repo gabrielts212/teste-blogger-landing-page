@@ -23,8 +23,8 @@ function Header() {
       <Box bg="white" px={4} py={2} pt="10">
         <Flex align="center">
           <CustomLink to="/">
-            <Box pl={8}>
-              <Image src={Logo} alt="Logo" boxSize="40px" />
+            <Box pl={8} >
+              <Image src={Logo} alt="Logo" boxSize="40px"  />
             </Box>
           </CustomLink>
 
