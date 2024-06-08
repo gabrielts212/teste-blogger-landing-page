@@ -26,7 +26,7 @@ const footer = () => {
 
       <Container maxW="6xl">
         <SimpleGrid columns={{ base: 1, md: 5 }} spacing={4}>
-          <Stack align="center" spacing={4} pr="41" justifyContent="center">
+          <Stack align="center" spacing={4} pr="41" justifyContent="center" cursor="pointer">
             <Box pb={14}>
               <Image src={Logo} alt="Logo" width={100} height={100} />
             </Box>
@@ -273,7 +273,7 @@ const footer = () => {
               </Text>
             </Box>
             <Flex alignItems="center">
-              <Box mr={4} pb="1">
+              <Box mr={4} pb="1" >
                 <Image src={Logo2} alt="Logo" width={6} height={6} />
               </Box>
               <Stack spacing={0}>
