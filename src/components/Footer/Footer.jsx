@@ -19,7 +19,7 @@ import Logo from "../../assets/logo.png";
 import Logo2 from "../../assets/logo2.png";
 
 
-const Footer = () => {
+const footer = () => {
   return (
     <Box bg="white" color="gray.700" py={10}>
       <Divider w="90%" borderWidth={2} borderColor="gray" mb={20} mx="auto" />
@@ -315,4 +315,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default footer;
